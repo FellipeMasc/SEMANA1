@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6em;
+            background: url('https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80');
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #514E4CE;
+        }
+        .container{
+            max-width: 280px;
+            margin:auto;
+            border: 0px #333 solid;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            background-color: white;
+        }
+        .box2{
+            text-align: left;
+            border-radius:4px;
+            border-width: 10px;
+        }
+        .box2 input{
+            margin-top: 10px;
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: 1px #ddd solid;
+            border-radius: 2px;
+
+        }
+        a{
+            color: #333;
+            text-decoration: none;
+        }
+        #login input{
+            border-radius:0px;
+            width: 100%;
+            background-color: #a794ec;
+            border-color: #a794ec;
+            text-align: center;
+        }
+        .box4{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+            <div class="box1">
+                <h1>Login</h1><br>
+                <p>Entre na sua conta abaixo</p>
+            </div>
+            <div class="box2">
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id ="email" placeholder="Digite seu email">
+            </div>
+            <div class="box2">
+                <label for="senha">Senha</label><br>
+                <input type="text" id="senha" name="senha" placeholder="Digite sua senha">
+            </div>
+            <div id="login"> 
+                <input type="submit" value="Entrar">
+            </div>
+            </header>
+        <div class="box4">
+            <p>
+                É a sua primeira vez aqui?
+                <a href="#">Criar uma conta</a>
+            </p>
+        </div>
+    
+    
+</body>
+</html>
