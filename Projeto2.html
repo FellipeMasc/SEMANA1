@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+    <link
+    href="https://fonts.googleapis.com/css?family=Raleway"
+    rel="stylesheet"
+  />
+    <style>
+        html{
+            font-size: 15px;
+        }
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: 'Raleway', sans-serif;
+            line-height: 1.8em;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./Imagens/Background1.jpg) no-repeat;
+            height: 100vh;
+            width: 100vw;
+            
+        }
+        .container{
+            max-width: 23rem;
+            margin: 8rem auto;
+            padding: 1rem;
+        }
+        #inicio{
+            color: #1A5FB4;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .form1{
+            background: #fff;
+            padding: 1.2rem;
+            border-radius: 0.5rem;
+        }
+        .form1 h2,
+        .form1 p{
+            color: #E6D11F;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        .forms label{
+            display: block;
+        }
+        .forms input{
+            width: 100%;
+            padding: 0.6rem;
+            border: #333 0.07rem solid;
+            border-radius: 0.4rem;
+            margin-bottom: 0.6rem;
+        }
+        .btn{
+            background: #8FE1FA;
+            width: 100%;
+            padding: 0.6rem;
+            border: 0rem solid;
+            border-radius: 0.3rem;
+            color: #fff;
+            margin-top: 1.3rem;
+            cursor: pointer;
+        }
+        a{
+            color: #8FE1FA;
+            text-decoration: none;
+        }
+        a:hover{
+            color: #083AF3;
+        }
+        .form2{
+            font-size: 1.4rem;
+            margin-top: 1.4rem;
+            color:#E6D11F;
+            text-align: center;
+        }
+        button:hover{
+            background: #083AF3;
+        }
+        #navbar{
+            background: #1A5FB4 ;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #img{
+            width: 3rem;
+            height: 3rem:
+        }
+        #navbar h1{
+            display: inline;
+        }
+       li{
+           display: inline;
+           padding: 1rem;
+           font-size: 1.2rem;
+       }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <span> 
+            <img id="img" src="/HTMLsandbox/Imagens/Aviao Branco.png" alt="">
+            <h1>ITA JUNIOR</h1>
+        </span>
+        <span>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Visto a Camisa</a></li>
+                <li><a href="#">Contatos</a></li>
+            </ul>
+        </span>
+    </div>
+    <div class="container">
+        <h1 id="inicio">Área de Membros</h1>
+        <div class="form1">
+            <h2>Login</h2>
+            <p>Entre na sua conta abaixo</p>
+            <div class="forms">
+                <label for="email">Email</label>
+                <input type="email" name="email" id ="email" placeholder="Digite seu email">
+            </div>
+            <div class="forms">
+                <label for="senha">Senha</label>
+                <input type="text" id="senha" name="senha" placeholder="Digite sua senha">
+            </div>
+            <button class="btn">Entrar</button>
+        </div>
+        <div class="form2">
+            <p>
+                É a sua primeira vez aqui?<br>
+            <a href="#">Criar uma conta</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
